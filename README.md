@@ -17,15 +17,11 @@ EEG data can be used to represent the health, mental state and thoughts of a per
 
 The use case would be a user thinks of a thought (say a blue bicycle). The BCI technology would collect the EEG readings produced at the time of this thought. These readings would be hashed and stored in a system database as part of their login credentials. When the user wants to login to the system, they would recreate the thought of their pass-thought (the blue bicycle). Which would reproduce the same hash, and grant them access to their account.
 
-Diagram of algorithm:
-<div align="center">
-  <img src="images/Hash_diagram.jpg" width=750 />
-</div>
+Diagrams of Program Logic:
 
-Program Output            |  Online Conversion
+Parsing Input File            |  Producing Hash
 :-------------------------:|:-------------------------:
-![alt text](images/text_to_bin_proof1.jpg)  |  ![alt text](images/text_to_bin_proof2.jpg)
-
+![alt text](Media/diagram2.png)  |  ![alt text](Media/diagram1.png)
 
 
 ## Algorithm Methodology
@@ -48,3 +44,9 @@ Program Output            |  Online Conversion
 3.  Run the program and enter which version of SHA to use in the logic when prompted
 4.  Enter the name of the EEG file to be hashed when prompted (without filepath, including file extension)
 5.  The program will output a 256 bit hash of the file provided as an input
+
+Program Demonstration:
+
+https://user-images.githubusercontent.com/82383713/166903289-738b3d48-c2a1-4fdb-99de-696c21301dfc.mp4
+
+This video shows a hash being produced from one of the test files. After changing a single digit, the resulting hash is very different, showing the avalanche effect.
