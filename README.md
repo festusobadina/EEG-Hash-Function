@@ -17,7 +17,7 @@ EEG data can be used to represent the health, mental state and thoughts of a per
 
 The use case would be a user thinks of a thought (say a blue bicycle). The BCI technology would collect the EEG readings produced at the time of this thought. These readings would be hashed and stored in a system database as part of their login credentials. When the user wants to login to the system, they would recreate the thought of their pass-thought (the blue bicycle). Which would reproduce the same hash, and grant them access to their account.
 
-There is a report in the "Documents" folder of the repository which goes into much more detail.
+There is a report in the the repository which goes into much more detail.
 
 Diagrams of Program Logic:
 
